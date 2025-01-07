@@ -15,9 +15,8 @@ public class DataLoader implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        // Salvando vagas iniciais
-        vagaService.salvarVaga(new Vaga("Desenvolvedor Java", "Criação de APIs", "Remoto", 7000.0));
+        vagaService.salvarVaga(new Vaga("desenvolvedor java", "teste", "Remoto", 7000.0));
         vagaService
-                .salvarVaga(new Vaga("Analista de Dados", "Análise de grandes volumes de dados", "São Paulo", 8000.0));
+                .salvarVaga(new Vaga("analista de dados", "teste", "São Paulo", 8000.0));
     }
 }
