@@ -13,13 +13,11 @@ public class Vaga {
     private String titulo;
     private String descricao;
     private String localizacao;
-    private Double salario;
 
-    public Vaga(String titulo, String descricao, String localizacao, double salario) {
+    public Vaga(String titulo, String descricao, String localizacao) {
         this.titulo = titulo;
         this.descricao = descricao;
         this.localizacao = localizacao;
-        this.salario = salario;
     }
 
     public Vaga() {
@@ -49,11 +47,4 @@ public class Vaga {
         this.localizacao = localizacao;
     }
 
-    public double getSalario() {
-        return salario;
-    }
-
-    public void setSalario(double salario) {
-        this.salario = salario;
-    }
 }
